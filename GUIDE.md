@@ -99,7 +99,8 @@ On a shared computer, sign out from the Account menu when you finish.
 
 ## Using it
 
-1. **Home** shows the party at a glance. Choosing a character in the left rail makes it the one
+1. **Home** shows the party at a glance, with each character's ScryRPG picture (or their initials
+   when they have none). Choosing a character in the left rail makes it the one
    you act as: for purchases, for where items go, and for Activity's filter. **Open sheet** opens
    its sheet.
 2. **Inventory** has **My character**, **Party** and **Stash** views, with the Party Stash first.
@@ -132,7 +133,8 @@ On a shared computer, sign out from the Account menu when you finish.
    **History**. Use it for rolls, hit points, spells, rests and equipment. **Currency** sets the
    exact number of coins.
 9. The **Open on ScryRPG** icon, at the top right of a character, a container, a shop, a loot pile
-   or the Library, opens it on the website: use it for anything the panel doesn't do.
+   or the Library, opens it on the website: use it for anything the panel doesn't do. A container
+   or item opens its owner's inventory there.
 
 ## Re-importing from D&D Beyond
 
@@ -140,9 +142,7 @@ On a shared computer, sign out from the Account menu when you finish.
    abilities, proficiencies, features, spells and maximum HP come from D&D Beyond.
 2. Play keeps the table's values: current and temporary hit points, coins, items, death saves,
    exhaustion, inspiration, spent spell slots, spent hit dice and spent feature uses.
-   The importing player receives one private message saying what was kept. Now and then a second
-   message follows, saying the hit points were restored to ScryRPG's value: that is the same kept
-   value, and nothing else changed.
+   The importing player receives one private message saying what was kept.
 3. Conditions reset to D&D Beyond's conditions, usually none. Reapply active conditions
    after the re-import. Between sessions is a good time to do this.
 
@@ -183,9 +183,6 @@ On a shared computer, sign out from the Account menu when you finish.
    the panel says **This pile uses need/greed: vote on ScryRPG**. The hero’s **Open on ScryRPG**
    icon opens that pile for voting and management.
 5. Loot placed on the map, journals and lore, and encounters are not in this version.
-6. Character pictures from ScryRPG reach Foundry with a coming ScryRPG update; until then the
-   panel shows initials. **Open on ScryRPG** opens the party's page for that section (inventory,
-   shops, loot) until the same update links each shop, pile and item directly.
 
 ## If something goes wrong
 
