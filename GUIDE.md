@@ -99,21 +99,40 @@ On a shared computer, sign out from the Account menu when you finish.
 
 ## Using it
 
-1. **Home** gives you the party overview. Choose a character in the left rail to use
-   that character for purchases and item destinations. **Open sheet** opens their sheet.
-2. **Inventory** has **My character**, **Party** and **Stash** views. Open containers,
-   click item names for details, and use **Move** or **Give** to move things.
-   **Adjust coins (+/−)** adds or removes coins; enter a negative amount to remove them.
-3. **Shops** lets you **Buy** and **Sell**. Check the character, quantity, price and
-   destination before confirming. **Loot** lets you **Take** items where allowed;
-   piles using voting send you to the website.
-4. **Library** searches the items available to your table. **Add item** on a container
-   opens the library for that container.
-5. **Activity** shows party history. Open an entry's details and use **Undo this change** where offered.
-   This undoes supported individual changes; it does not replace your world backup.
-6. The character sheet has **Stats**, **Spells**, **Inventory**, **Notes**, **About** and
-   **History**. Use it for rolls, hit points, spells, rests and equipment. **Edit coin counts**
-   sets the actual number of coins, rather than adding or subtracting an amount.
+1. **Home** shows the party at a glance. Choosing a character in the left rail makes it the one
+   you act as: for purchases, for where items go, and for Activity's filter. **Open sheet** opens
+   its sheet.
+2. **Inventory** has **My character**, **Party** and **Stash** views, with the Party Stash first.
+   Expand a character or a container to see its items. Click a row for its details, and its
+   picture for a larger view.
+   - **Give** (the arrows icon) and **… → Move** open a dialog: choose where it goes, then how
+     many (**1**, **Half**, **All** or a number).
+   - Or drag a row onto a container. A stack asks how many. Dropping a row onto a character opens
+     Move with that character chosen.
+   - **… → Use ScryRPG portrait in Foundry** sets the character's Foundry picture from ScryRPG,
+     when ScryRPG has one.
+   - **Funds** is your money. **Adjust currency (+/−)** adds or removes coins; a negative amount
+     removes them. Coins also show as items in the container that holds them.
+3. **Shops** lists the party's shops. In a shop, set **Buying into** once: a character's container
+   or the Party Stash. It is also where **Sell** takes items from. **Buy** or **Sell** opens a
+   dialog with ScryRPG's price. Choose **Pay with** (the character's funds or the party's) and a
+   quantity, then confirm. If the price changes before you confirm, the dialog asks again.
+4. **Loot** lists the party's loot piles. **Take** opens a dialog: how many, and where to put it,
+   including the Party Stash. The GM can **Reveal** or **Hide** a pile. Piles that use need/greed
+   are voted on the website.
+5. **Library** searches the items your table can add. **Table library** shows what your table can
+   use; **All content** also shows items outside your table's shelf. Open an item to see it, then
+   **Add to…** to choose a container and a quantity. **Add item** on a container opens the
+   Library for that container.
+6. **Activity** is the party's timeline. Search it, filter it by **Items**, **Shops**, **Loot** or
+   **Other**, or choose a character in the rail. Click an entry to see it in **History**.
+7. **History**, on each character sheet and on Home, lists changes with **Undo** where it is
+   offered. This undoes individual changes; it does not replace your world backup.
+8. The character sheet has **Stats**, **Spells**, **Inventory**, **Notes**, **About** and
+   **History**. Use it for rolls, hit points, spells, rests and equipment. **Currency** sets the
+   exact number of coins.
+9. The **Open on ScryRPG** icon, at the top right of a character, a container, a shop, a loot pile
+   or the Library, opens it on the website: use it for anything the panel doesn't do.
 
 ## Re-importing from D&D Beyond
 
@@ -121,7 +140,9 @@ On a shared computer, sign out from the Account menu when you finish.
    abilities, proficiencies, features, spells and maximum HP come from D&D Beyond.
 2. Play keeps the table's values: current and temporary hit points, coins, items, death saves,
    exhaustion, inspiration, spent spell slots, spent hit dice and spent feature uses.
-   The importing player receives one private message saying what was kept.
+   The importing player receives one private message saying what was kept. Now and then a second
+   message follows, saying the hit points were restored to ScryRPG's value: that is the same kept
+   value, and nothing else changed.
 3. Conditions reset to D&D Beyond's conditions, usually none. Reapply active conditions
    after the re-import. Between sessions is a good time to do this.
 
@@ -157,15 +178,14 @@ On a shared computer, sign out from the Account menu when you finish.
    ScryRPG doesn't keep them yet, so awarding XP in Foundry (by hand or with a module such as
    Monk's TokenBar) is fine, and the website won't show it.
 3. Carrying capacity reads **Capacity not shown** in the panel, or **Not shown** where
-   the value is unavailable. Loot piles show no total value.
+   the value is unavailable. The Take dialog omits unavailable capacity. Loot piles show no total value.
 4. Create shops and loot on the website, then use them in Foundry. For voting on loot,
-   the panel says **This pile uses need/greed. Vote and claim on the website.** and offers
-   **Open on the website**.
+   the panel says **This pile uses need/greed: vote on ScryRPG**. The hero’s **Open on ScryRPG**
+   icon opens that pile for voting and management.
 5. Loot placed on the map, journals and lore, and encounters are not in this version.
-6. On Foundry 14 with D&D Beyond Importer 7.5, a re-import can post a few "A change you made to
-   <character> was replaced" notices, and the character's maximum HP can end up stored as a
-   fixed number instead of being worked out from the build. It shows the right number and nothing
-   is lost; you can ignore those notices. A fix is coming in a later update.
+6. Character pictures from ScryRPG reach Foundry with a coming ScryRPG update; until then the
+   panel shows initials. **Open on ScryRPG** opens the party's page for that section (inventory,
+   shops, loot) until the same update links each shop, pile and item directly.
 
 ## If something goes wrong
 
