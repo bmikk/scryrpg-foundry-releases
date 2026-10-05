@@ -22,10 +22,10 @@ shops, loot, the library, and history with undo are together where you play.
 4. Everyone needs their own ScryRPG account and membership in the same party on the
    website. The Foundry GM must also be that party's GM on the website.
 
-Two-browser testing used Foundry 13.351, D&D 5e 5.3.3 and Chromium 152.
-Foundry 14.368 with D&D 5e 6.0.5 and 5.3.3 passed separate panel and sheet checks,
-but has not had the same two-browser testing. Other versions and browsers are not yet
-verified. The menu instructions below use Foundry 13.
+Two-browser testing used Foundry 13.351 with D&D 5e 5.3.3, and Foundry 14.368 with
+D&D 5e 6.0.5, in Chromium 152. Foundry 14.368 with D&D 5e 5.3.3 passed separate panel and
+sheet checks. Other versions and browsers are not yet verified. The menu instructions below
+use Foundry 13.
 
 ## Back up first
 
@@ -54,6 +54,9 @@ Leave the module disabled after restoring while we help you check what happened.
    `https://github.com/bmikk/scryrpg-foundry-releases/releases/latest/download/module.json`
 3. Later versions arrive the same way: on **Add-on Modules**, click **Update** (or
    **Update All**) when Foundry offers one. Back up your world before updating.
+   If Foundry says **Update the ScryRPG module to … or later**, ScryRPG needs that version.
+   Until the module is updated, the panel still shows ScryRPG, but this world and ScryRPG don't
+   sync: changes made in Foundry are kept and go up after the update.
 4. Without the link, unpack the zip from the same releases page into a folder named
    `scryrpg-foundry` inside Foundry's `Data/modules` folder, so that the result is
    `Data/modules/scryrpg-foundry/module.json`. A hosting service's file manager works too.
