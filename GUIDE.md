@@ -75,28 +75,45 @@ Leave the module disabled after restoring while we help you check what happened.
 1. In **Game Settings**, click **Open ScryRPG Campaign**.
 2. In the panel, open **Account → Connect your ScryRPG account**. Click
    **Open the ScryRPG website**. While signed in to your own account, enter the code
-   shown in Foundry and approve the connection on the website. The GM connects first
-   and approves the world's connection to the party there.
+   shown in Foundry (**Copy** copies it) and approve the connection on the website. The GM
+   connects first and approves the world's connection to the party there.
 3. Every player repeats this on their own computer with their own account. A GM cannot
    connect for a player. Keep the GM connected while the table uses ScryRPG.
-4. If Home shows **Finish character setup in Status**, click it. In **Status → Setup**,
-   **Set up characters** shows what each character still needs and counts before you choose.
-5. To link an existing Foundry character, select it under **Your Foundry character** for
-   the matching ScryRPG character. Click **Compare with ScryRPG** and read the differences.
-   Choose **Link it, keeping Foundry's values** or **Link it, keeping ScryRPG's values**
-   according to which copy you want to keep.
-6. If asked to match items, match each ScryRPG item to the same item in Foundry, or choose
+4. Open **Status** (the bell at the top of the panel). Its **Setup** section shows what each
+   character still needs.
+
+### Bringing characters in
+
+Each character needs a partner on the other side. Pick the case that matches:
+
+- **A character that is only in Foundry:** in **Status → Setup**, use **Create in ScryRPG**.
+  It creates the character on ScryRPG from Foundry's values and sends its items with it.
+  A player does this for their own character. A GM can do it for characters the GM owns, then
+  hand them to players on the website.
+- **A character that already exists on ScryRPG, even an old or level-1 copy:** don't create it
+  again. On that character's card, select it under **Your Foundry character**, click
+  **Compare with ScryRPG**, and choose **Link it, keeping Foundry's values** to bring the
+  Foundry build up to ScryRPG. If a name matches, **Create in ScryRPG** warns you, because it
+  would make a second copy.
+- **A character that is only on ScryRPG:** the GM creates an empty character in Foundry with the
+  same name, then links it as above but chooses **Link it, keeping ScryRPG's values**. The GM then
+  gives the player ownership of it in Foundry. (In this alpha, **Keep the campaign side** on such
+  a card waits for the world to sync, and the world doesn't sync until the card is done, so use the
+  link.)
+
+Then:
+1. If asked to match items, match each ScryRPG item to the same item in Foundry, or choose
    **Not in Foundry**. Review any **Remove from ScryRPG** choices and the items listed under
    **Sent to ScryRPG as new items**, then click **Start character setup**.
-7. A Foundry character missing from the website can use **Create in ScryRPG**. Other setup
-   prompts offer **Keep the Foundry side** or **Keep the campaign side** and explain what
-   remains to do. Review any characters or items being replaced, then use **Carry out this choice**
-   when offered.
-8. If it says **Waiting for setup data**, keep the GM connected and follow the message.
+2. Other setup prompts offer **Keep the Foundry side** or **Keep the campaign side** and explain
+   what remains to do. Review any characters or items being replaced, then use
+   **Carry out this choice** when offered. Items that are only in Foundry can be sent to ScryRPG
+   with **Keep the Foundry side**, or deleted from the character in Foundry.
+3. If it says **Waiting for setup data**, keep the GM connected and follow the message.
    Resolve any **Conflict** shown before continuing. Setup is finished when it says
    **Foundry and ScryRPG agree; setup is complete.**
 
-When the GM creates a character for a player, the GM gives that player ownership of it in Foundry.
+A character created or reassigned in Foundry appears in **Setup** within a moment, with no reload.
 
 On a shared computer, sign out from the Account menu when you finish.
 
@@ -104,11 +121,13 @@ On a shared computer, sign out from the Account menu when you finish.
 
 1. **Home** shows the party at a glance, with each character's ScryRPG picture (or their initials
    when they have none). Choosing a character in the left rail makes it the one
-   you act as: for purchases, for where items go, and for Activity's filter. **Open sheet** opens
+   you act as: for purchases, for where items go, and for Activity's filter. From Home, the
+   Library or the GM tools, it also opens that character's inventory. **Open sheet** opens
    its sheet.
 2. **Inventory** has **My character**, **Party** and **Stash** views, with the Party Stash first.
-   Expand a character or a container to see its items. Click a row for its details, and its
-   picture for a larger view.
+   Expand a character or a container to see its items. A stack's row shows its total weight and
+   value. Click a row for its details, including the figures for one, and its picture for a larger
+   view.
    - **Give** (the arrows icon) and **… → Move** open a dialog: choose where it goes, then how
      many (**1**, **Half**, **All** or a number).
    - Or drag a row onto a container. A stack asks how many. Dropping a row onto a character opens
