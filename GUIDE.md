@@ -82,6 +82,22 @@ Leave the module disabled after restoring while we help you check what happened.
 4. Open **Status** (the bell at the top of the panel). Its **Setup** section shows what each
    character still needs.
 
+GMs and managers can open **Players and characters** beside the GM dashboard to compare
+ScryRPG owners with verified Foundry users and linked Actor owners. Use its explicit fixes to
+give Foundry ownership, open the existing Link/Create setup, or invite players. If you own a
+character on ScryRPG, you can offer it to a verified player who owns its Actor in Foundry.
+Giving that player Owner in Foundry also asks whether to send this offer; choosing No changes
+nothing on ScryRPG. Existing Foundry ownership is never removed automatically.
+
+Players see pending character offers when they open the campaign panel. Choose **Accept** to
+receive the character on ScryRPG or **Decline** to refuse it. A stale offer disappears with an
+explanation; a character limit shows the used and allowed counts. After acceptance, the normal
+sync grants the new owner's verified Foundry user access. Reopening within a minute reuses the
+pending list; answering an offer refreshes it immediately.
+
+The GM can use **Home → Invite players** to copy or open the current party join link.
+Choose **Share with players** to put a dismissible invite with Copy in players’ Home panels.
+
 ### Bringing characters in
 
 Each character needs a partner on the other side. Pick the case that matches:
