@@ -95,11 +95,13 @@ Each character needs a partner on the other side. Pick the case that matches:
   **Compare with ScryRPG**, and choose **Link it, keeping Foundry's values** to bring the
   Foundry build up to ScryRPG. If a name matches, **Create in ScryRPG** warns you, because it
   would make a second copy.
-- **A character that is only on ScryRPG:** the GM creates an empty character in Foundry with the
-  same name, then links it as above but chooses **Link it, keeping ScryRPG's values**. The GM then
-  gives the player ownership of it in Foundry. (In this alpha, **Keep the campaign side** on such
-  a card waits for the world to sync, and the world doesn't sync until the card is done, so use the
-  link.)
+- **A character that is only on ScryRPG:** choose **Keep the campaign side** on its card, and the
+  GM's world builds it in Foundry. A player does this for their own character, with the GM
+  connected. If the card says ScryRPG doesn't have the character's full build (class, level, ability
+  scores and hit points per level), create an empty character in Foundry with the same name instead,
+  and link it as above, choosing **Link it, keeping ScryRPG's values**. The GM is told in chat when a
+  player's character is built and whether the player was given ownership in Foundry; if not, the GM
+  gives it in Foundry's ownership settings.
 
 Then:
 1. If asked to match items, match each ScryRPG item to the same item in Foundry, or choose
