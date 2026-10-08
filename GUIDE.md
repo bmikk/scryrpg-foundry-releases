@@ -104,8 +104,11 @@ Each character needs a partner on the other side. Pick the case that matches:
 
 - **A character that is only in Foundry:** in **Status → Setup**, use **Create in ScryRPG**.
   It creates the character on ScryRPG from Foundry's values and sends its items with it.
-  A player does this for their own character. A GM can do it for characters the GM owns, then
-  hand them to players on the website.
+  A player does this for their own character, and it's the easy way: they own it on both sides at
+  once. A GM can do it instead, and the character is then the GM's on ScryRPG. To hand it over,
+  open **Players and characters** and click **Offer to <player> on ScryRPG** once that player has
+  connected; the player accepts in their panel. Don't delete it on the website to start over: if you
+  did, the Foundry character can be linked or created again from setup.
 - **A character that already exists on ScryRPG, even an old or level-1 copy:** don't create it
   again. On that character's card, select it under **Your Foundry character**, click
   **Compare with ScryRPG**, and choose **Link it, keeping Foundry's values** to bring the
