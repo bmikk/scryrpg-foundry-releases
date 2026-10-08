@@ -85,7 +85,13 @@ Leave the module disabled after restoring while we help you check what happened.
 GMs and managers can open **Players and characters** beside the GM dashboard to compare
 ScryRPG owners with verified Foundry users and linked Actor owners. Use its explicit fixes to
 give Foundry ownership, open the existing Link/Create setup, or invite players. If you own a
-character on ScryRPG, you can offer it to a verified player who owns its Actor in Foundry.
+character on ScryRPG, you can offer it to an accepted player, manager or GM by name. When the
+platform serves party members, they need not have connected in Foundry yet; observers cannot
+receive offers. On an older platform without that list, offers use verified Foundry owners.
+The roster includes members without characters and shows **Email not verified**, **Not connected
+in Foundry**, or **Connected** when the platform supplies those facts. Connected means a usable
+personal session on this installation, not that the person is currently online. Unknown states
+have no label.
 Giving that player Owner in Foundry also asks whether to send this offer; choosing No changes
 nothing on ScryRPG. Existing Foundry ownership is never removed automatically.
 
@@ -106,8 +112,9 @@ Each character needs a partner on the other side. Pick the case that matches:
   It creates the character on ScryRPG from Foundry's values and sends its items with it.
   A player does this for their own character, and it's the easy way: they own it on both sides at
   once. A GM can do it instead, and the character is then the GM's on ScryRPG. To hand it over,
-  open **Players and characters** and click **Offer to <player> on ScryRPG** once that player has
-  connected; the player accepts in their panel. Don't delete it on the website to start over: if you
+  choose the receiver in **Whose character is this?** after Create, or choose **Keep it mine**.
+  You can also use **Offer to <player> on ScryRPG** in **Players and characters** later.
+  The player accepts in their panel. Don't delete it on the website to start over: if you
   did, the Foundry character can be linked or created again from setup.
 - **A character that already exists on ScryRPG, even an old or level-1 copy:** don't create it
   again. On that character's card, select it under **Your Foundry character**, click
@@ -121,6 +128,15 @@ Each character needs a partner on the other side. Pick the case that matches:
   and link it as above, choosing **Link it, keeping ScryRPG's values**. The GM is told in chat when a
   player's character is built and whether the player was given ownership in Foundry; if not, the GM
   gives it in Foundry's ownership settings.
+
+If you have exactly one unlinked character on each side, Setup offers **Link <Foundry name> to
+<ScryRPG name>?**. Clicking it opens Compare with both selected; you still review and choose a
+side before anything links.
+
+To undo a link, use **Unlink from ScryRPG** on its setup card or in **Players and characters**.
+The ScryRPG owner or a GM/manager confirms: both copies stay and stop syncing. Nothing is deleted.
+You can then link the Foundry character to the intended ScryRPG character. If the link is busy,
+try again shortly.
 
 Then:
 1. If asked to match items, match each ScryRPG item to the same item in Foundry, or choose
@@ -145,16 +161,32 @@ On a shared computer, sign out from the Account menu when you finish.
    you act as: for purchases, for where items go, and for Activity's filter. From Home, the
    Library or the GM tools, it also opens that character's inventory. **Open sheet** opens
    its sheet.
-2. **Inventory** has **My character**, **Party** and **Stash** views, with the Party Stash first.
-   Expand a character or a container to see its items. A stack's row shows its total weight and
-   value. Click a row for its details, including the figures for one, and its picture for a larger
-   view.
-   - **Give** (the arrows icon) and **… → Move** open a dialog: choose where it goes, then how
-     many (**1**, **Half**, **All** or a number).
-   - Or drag a row onto a container. A stack asks how many. Dropping a row onto a character opens
-     Move with that character chosen.
+2. **Inventory** keeps the **My character**, **Party** and **Stash** scopes. Party shows
+   character cards on the left and a separately scrolling Party Stash on the right. In a narrow
+   panel, use **Characters | Party Stash** tabs. Items without a container appear under **Unsorted**
+   in the stash.
+   - **Find an item** searches names and tags from two characters. **Expand all** and
+     **Collapse all** adjust the cards and containers without jumping the scroll position.
+   - Players initially see their own characters and nonempty containers open; GMs start with
+     characters collapsed. Small stash containers start open. Expansion lasts while the panel is open.
+   - A container’s **…** menu switches between list and cards view, or opens container editing
+     on ScryRPG. Narrow panels always use lists.
+   - Rows show weight for one item and value for the whole stack; hover the value for its unit
+     value. Click a row for details, including the existing split, equipment and commerce actions.
+   - Each item's **…** menu offers **Edit Details**, **Split Stack** for multiple items, and
+     **Remove Item**. Removing asks first and sends the item to party trash; undo it from History.
+     Edit changes name, quantity, unit value and weight, with served equipment/attunement toggles
+     for character items. **Add custom item** beside catalogue Add creates an item in that container.
+     Owners can manage their characters, GMs/managers can manage all characters, and members can
+     manage the Party Stash. GMs can download **Export CSV** for the party inventory.
+   - **Move** opens **To**, then **Container**; quantity starts at one. **Give** remains in **…**.
+   - Drag an item to a container, character header or Party Stash header. Other cards collapse
+     while you carry it. Hold a collapsed character or an inactive tab for just over a second to
+     open it. Releasing or pressing Escape restores the layout. Stacks ask how many to transfer,
+     starting with the whole stack. ScryRPG decides cross-container merges; merging stacks within
+     the same container sends Merge when the stacks are compatible.
    - **… → Use ScryRPG portrait in Foundry** sets the character's Foundry picture from ScryRPG,
-     when ScryRPG has one.
+     when ScryRPG has one. **Open on ScryRPG** reaches container management on the website.
    - **Funds** is your money. **Adjust currency (+/−)** adds or removes coins; a negative amount
      removes them. Coins also show as items in the container that holds them.
 3. **Shops** lists the party's shops. In a shop, set **Buying into** once: a character's container
@@ -230,6 +262,12 @@ On a shared computer, sign out from the Account menu when you finish.
 ## If something goes wrong
 
 Report problems to the ScryRPG team in the closed-beta channel where you were invited.
+Open the campaign panel’s **Account** menu to find the installed ScryRPG module, Foundry and game
+system versions. Press **Copy diagnostics** and include that text with your report. It includes
+connection and world status, any world hold reason, setup progress and counts of stale links and
+pending changes. It excludes account details, names, IDs, URLs and sign-in secrets. If copying
+fails, select and copy the diagnostics text shown in Account. A GM’s and an affected player’s
+blocks can help explain a table-wide problem.
 
 1. As GM, open **Game Settings → Configure Settings** and turn on **Pause ScryRPG sync**,
    then save. This stops sending and applying ScryRPG changes; it does not undo earlier ones.
