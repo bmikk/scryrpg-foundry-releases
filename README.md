@@ -34,8 +34,9 @@ inside the module as its README.
 
 ## What's here
 
-This repository holds only the released builds, the guide and the license. Each release has two
-files: `module.json` and `module.zip`. The source code is not published here.
+This repository holds only the released builds, the guide, the license and the third-party
+notices. Each release has two files: `module.json` and `module.zip`. The source code is not
+published here.
 
 ## License
 

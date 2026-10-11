@@ -79,78 +79,74 @@ Leave the module disabled after restoring while we help you check what happened.
    connects first and approves the world's connection to the party there.
 3. Every player repeats this on their own computer with their own account. A GM cannot
    connect for a player. Keep the GM connected while the table uses ScryRPG.
-4. Open **Status** (the bell at the top of the panel). Its **Setup** section shows what each
-   character still needs.
+4. Players open **Your character**. GMs and managers open **Your table** to see who is ready
+   and who needs help. **Status** now shows sync health.
 
-GMs and managers can open **Players and characters** beside the GM dashboard to compare
-ScryRPG owners with verified Foundry users and linked Actor owners. Use its explicit fixes to
-give Foundry ownership, open the existing Link/Create setup, or invite players. If you own a
-character on ScryRPG, you can offer it to an accepted player, manager or GM by name. When the
-platform serves party members, they need not have connected in Foundry yet; observers cannot
-receive offers. On an older platform without that list, offers use verified Foundry owners.
-The roster includes members without characters and shows **Email not verified**, **Not connected
-in Foundry**, or **Connected** when the platform supplies those facts. Connected means a usable
-personal session on this installation, not that the person is currently online. Unknown states
-have no label.
-Giving that player Owner in Foundry also asks whether to send this offer; choosing No changes
-nothing on ScryRPG. Existing Foundry ownership is never removed automatically.
+### Your table (GM)
 
-Players see pending character offers when they open the campaign panel. Choose **Accept** to
-receive the character on ScryRPG or **Decline** to refuse it. A stale offer disappears with an
-explanation; a character limit shows the used and allowed counts. After acceptance, the normal
-sync grants the new owner's verified Foundry user access. Reopening within a minute reuses the
-pending list; answering an offer refreshes it immediately.
+Each player has one row with their character, what is happening, and at most one next action.
+The count beside **Your table** tells you how many rows need you. Watching players do not count
+as characters ready to play. If the connection has not supplied a fact yet, the table says it is
+still checking.
 
-The GM can use **Home → Invite players** to copy or open the current party join link.
-Choose **Share with players** to put a dismissible invite with Copy in players’ Home panels.
+- **Give <player> the sheet** answers their saved request. If they could not see a sheet to
+  name, choose one from the short list first. They must connect with their own Foundry user
+  before ownership can be verified. Existing permissions are preserved.
+- **Set up for <player>** opens the same three questions with a banner naming the player.
+  You can choose a sheet in this world, including a placeholder you own. Linking their existing
+  ScryRPG character keeps it theirs. Creating one from a Foundry sheet first makes it yours,
+  then sends them an offer. The row waits for their acceptance; it does not transfer it silently.
+- **Copy invite link** appears when ScryRPG supplies a party join link.
+- A problem expands in its player's row. **Keep this one** keeps the selected linked sheet;
+  the other keeps its contents and permissions in Foundry and stops syncing. If the selected
+  copy needs a new link, the same action connects it. An interrupted repair stays on the row
+  for you to retry; opening the panel alone never restarts it.
 
-### Bringing characters in
+World problems appear above the rows. If another browser is saving a character, close that
+browser's character session, then reload here. There is no takeover button.
 
-Each character needs a partner on the other side. Pick the case that matches:
+Pending character offers appear on the recipient's **Your character** card. Choose **Accept**
+or **Decline**. After acceptance, the normal sync grants access to the new owner's verified
+Foundry user. A stale offer explains why it disappeared; a character limit shows the counts.
 
-- **A character that is only in Foundry:** in **Status → Setup**, use **Create in ScryRPG**.
-  It creates the character on ScryRPG from Foundry's values and sends its items with it.
-  A player does this for their own character, and it's the easy way: they own it on both sides at
-  once. A GM can do it instead, and the character is then the GM's on ScryRPG. To hand it over,
-  choose the receiver in **Whose character is this?** after Create, or choose **Keep it mine**.
-  You can also use **Offer to <player> on ScryRPG** in **Players and characters** later.
-  The player accepts in their panel. Don't delete it on the website to start over: if you
-  did, the Foundry character can be linked or created again from setup.
-- **A character that already exists on ScryRPG, even an old or level-1 copy:** don't create it
-  again. On that character's card, select it under **Your Foundry character**, click
-  **Compare with ScryRPG**, and choose **Link it, keeping Foundry's values** to bring the
-  Foundry build up to ScryRPG. If a name matches, **Create in ScryRPG** warns you, because it
-  would make a second copy.
-- **A character that is only on ScryRPG:** choose **Keep the campaign side** on its card, and the
-  GM's world builds it in Foundry. A player does this for their own character, with the GM
-  connected. If the card says ScryRPG doesn't have the character's full build (class, level, ability
-  scores and hit points per level), create an empty character in Foundry with the same name instead,
-  and link it as above, choosing **Link it, keeping ScryRPG's values**. The GM is told in chat when a
-  player's character is built and whether the player was given ownership in Foundry; if not, the GM
-  gives it in Foundry's ownership settings.
+Use **Play a character yourself** for your own character. **Advanced** opens character switching, ownership, earlier versions, sync details and table
+options. Problems appear inside the affected row, with one decision and one action.
 
-If you have exactly one unlinked character on each side, Setup offers **Link <Foundry name> to
-<ScryRPG name>?**. Clicking it opens Compare with both selected; you still review and choose a
-side before anything links.
+### Your character
 
-To undo a link, use **Unlink from ScryRPG** on its setup card or in **Players and characters**.
-The ScryRPG owner or a GM/manager confirms: both copies stay and stop syncing. Nothing is deleted.
-You can then link the Foundry character to the intended ScryRPG character. If the link is busy,
-try again shortly.
+Players open **Your character → Connect my character**. The wizard asks at most three questions:
 
-Then:
-1. If asked to match items, match each ScryRPG item to the same item in Foundry, or choose
-   **Not in Foundry**. Review any **Remove from ScryRPG** choices and the items listed under
-   **Sent to ScryRPG as new items**, then click **Start character setup**.
-2. Other setup prompts offer **Keep the Foundry side** or **Keep the campaign side** and explain
-   what remains to do. Review any characters or items being replaced, then use
-   **Carry out this choice** when offered. Items that are only in Foundry can be sent to ScryRPG
-   with **Keep the Foundry side**, or deleted from the character in Foundry.
-3. If it says **Waiting for setup data**, keep the GM connected and follow the message.
-   Resolve any **Conflict** shown before continuing. Setup is finished when it says
-   **Foundry and ScryRPG agree; setup is complete.**
+1. **Which character are you playing?** Choose your ScryRPG character in this party, or choose
+   **It's not on ScryRPG yet** to start from a Foundry sheet. One character syncs at a time.
+2. **Is it already in Foundry?** Choose a sheet you own, or **No, make it for me**. Your GM's
+   Foundry builds a new sheet from ScryRPG. **Don't see your sheet?** lets you ask your GM for it.
+   The request says **Saved** only after it is stored; it stays on your card and can be cancelled.
+   A private sheet's contents are never shown to someone who cannot see it.
+3. **Which version matches now?** When both copies have meaningful data, compare their level,
+   hit points, items, coins and last-changed dates. Neither version is chosen for you. Pick one
+   whole version; the preview names fields that cannot switch.
 
-A character created or reassigned in Foundry appears in **Setup** within a moment, with no reload.
+Before replacing an existing Foundry sheet, setup waits for the GM to save and verify its backup.
+Keep the wizard open while waiting, or reopen it to check the saved attempt after a reload.
+If either version changes before setup starts, review again. Uncertain operations keep their
+original identity rather than starting another copy.
+
+Items are paired automatically only when their native identities prove a match. Ambiguous items,
+including two same-named items, remain unlinked on your sheet and are listed as **Kept only in
+Foundry**. Explicit item-pairing tools are reserved for Advanced.
+
+**Ready** means the sheet has arrived, you own it, and its level-up work is complete. Otherwise,
+the card names the remaining step: **Finish level-up**, **Waiting for your GM**, or **Items still
+arriving**. Once ready, use **Open sheet** and play normally. **Something wrong? Get help** copies
+a diagnostic report. **Advanced** opens switching, earlier versions, comparison, unlinking and a support report.
+
+If ScryRPG asks which character you play now, the current default is preselected.
+**Keep <character>** confirms the choice; **Ask me later** leaves the default in place. Other sheets stay in
+Foundry and stop syncing until you switch back. If your GM handles setup for the table, your card
+says so and offers **Ask** instead of the self-service wizard.
+
+If a sheet is linked but its version choice is unfinished, **Finish connecting**
+opens directly at the version question. You do not have to select the same character and sheet again.
 
 On a shared computer, sign out from the Account menu when you finish.
 
@@ -272,7 +268,7 @@ blocks can help explain a table-wide problem.
 1. As GM, open **Game Settings → Configure Settings** and turn on **Pause ScryRPG sync**,
    then save. This stops sending and applying ScryRPG changes; it does not undo earlier ones.
    The panel also offers **Account → Pause sync**. When ready, the GM can use
-   **Resume** in **Status**.
+   **Advanced → Sync → Resume sync**.
 2. To stop using the module, open **Game Settings → Manage Modules**, uncheck
    **ScryRPG Connected Campaign (Alpha)**, click **Save Module Settings**, and reload.
 3. To put the world back as it was, restore the backup using the steps above.
@@ -285,3 +281,36 @@ blocks can help explain a table-wide problem.
 2. Its notes on characters and items, items it created, and a few settings stay in the
    world. These leftovers are harmless. Removing the module does not put earlier values back.
 3. The backup is the only complete undo for the Foundry world.
+
+
+## Advanced
+
+Open **Advanced** from Your character or Your table for switching characters, reviewing every
+difference, fixing item matches, restoring an earlier version, unlinking, and copying a support
+report. Unlink keeps both the Foundry sheet and ScryRPG character. The GM also has table-wide
+sync, held-deletion, history, ownership and world options here.
+
+**Foundry backups.** The module saves a verified copy of a Foundry sheet before anything replaces
+it, and **Save a backup now** saves one whenever you like. The last 3 are kept. Players' backups are
+written by the GM's browser, so they show **Waiting for the GM** until a GM is in the world.
+
+**Restoring a Foundry backup** changes only the Foundry sheet; it never sends anything to ScryRPG.
+It works on a sheet that isn't syncing. To restore a character that is syncing, choose **Stop
+syncing <name> · Unlink…** first, restore, then connect it again with **Connect my character** and
+choose which version to keep. Restore always shows a preview first and saves the current sheet
+before replacing it.
+
+**ScryRPG restore points** protect the ScryRPG character when you choose to keep the Foundry version
+during setup. When ScryRPG can save them, that restore point also keeps hit points, conditions and
+spell slots; when you restore it, the preview offers **Also bring back hit points, conditions and
+spell slots**, ticked by default. A changed character needs a fresh preview and confirmation. Hidden values stay hidden.
+
+**Stop syncing** turns a sheet into a plain Foundry sheet: it keeps everything on it and ScryRPG
+keeps its character. **Two sheets for one character:** when a character has two Foundry sheets,
+your table shows it; choose **Keep this one** and the other becomes a plain Foundry sheet.
+
+Wild Shape and Polymorph forms never sync; the original character is unchanged.
+
+**Give to…** offers a character to another party member. After acceptance, the GM reviews whether
+the former owner should keep Foundry Owner access. **Table options** controls whether players may
+connect their own character and whether the party's sheets have default Observer access.
