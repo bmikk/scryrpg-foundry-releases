@@ -5,6 +5,8 @@
 > and before each session while you use it. It only connects for ScryRPG parties invited to the
 > closed beta.
 
+When a character was made on the website, setup asks you to confirm its stats.
+
 ## What this is
 
 ScryRPG adds a campaign panel and character sheet inside Foundry. Linked characters stay
@@ -114,6 +116,8 @@ options. Problems appear inside the affected row, with one decision and one acti
 
 ### Your character
 
+The sheet uses this world’s D&D rules edition unless the character already has one.
+
 Players open **Your character → Connect my character**. The wizard asks at most three questions:
 
 1. **Which character are you playing?** Choose your ScryRPG character in this party, or choose
@@ -125,6 +129,8 @@ Players open **Your character → Connect my character**. The wizard asks at mos
 3. **Which version matches now?** When both copies have meaningful data, compare their level,
    hit points, items, coins and last-changed dates. Neither version is chosen for you. Pick one
    whole version; the preview names fields that cannot switch.
+   When choosing which version to keep, **In Foundry** keeps ScryRPG-only coins and adds them
+   to your sheet wherever its denomination is zero; nonzero amounts on your sheet win.
 
 Before replacing an existing Foundry sheet, setup waits for the GM to save and verify its backup.
 Keep the wizard open while waiting, or reopen it to check the saved attempt after a reload.
