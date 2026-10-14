@@ -5,8 +5,6 @@
 > and before each session while you use it. It only connects for ScryRPG parties invited to the
 > closed beta.
 
-When a character was made on the website, setup asks you to confirm its stats.
-
 ## What this is
 
 ScryRPG adds a campaign panel and character sheet inside Foundry. Linked characters stay
@@ -131,6 +129,15 @@ Players open **Your character → Connect my character**. The wizard asks at mos
    whole version; the preview names fields that cannot switch.
    When choosing which version to keep, **In Foundry** keeps ScryRPG-only coins and adds them
    to your sheet wherever its denomination is zero; nonzero amounts on your sheet win.
+
+When a character was made on the website, setup first asks you to confirm its stats, once.
+
+**Setup is saved on ScryRPG.** Each step is recorded there, so setup carries on after a reload, a
+closed tab or a crashed browser, and another of your browsers (or your GM's) picks up where it
+stopped. Your GM can build your sheet while you are offline; the steps that need you wait until you
+open Foundry. If ScryRPG is busy, setup waits and tries again by itself. If your plan has no free
+character slot, the card says so and offers **Connect an existing character instead**,
+**Open ScryRPG**, **Try again** and **Stop**.
 
 Before replacing an existing Foundry sheet, setup waits for the GM to save and verify its backup.
 Keep the wizard open while waiting, or reopen it to check the saved attempt after a reload.
