@@ -84,8 +84,8 @@ Leave the module disabled after restoring while we help you check what happened.
 
 ### Your table (GM)
 
-Each player has one row with their character, what is happening, and at most one next action.
-The count beside **Your table** tells you how many rows need you. Watching players do not count
+Each player has one entry with their character, what is happening, and at most one next action.
+The count beside **Your table** tells you how many entries need you. Watching players do not count
 as characters ready to play. If the connection has not supplied a fact yet, the table says it is
 still checking.
 
@@ -95,14 +95,14 @@ still checking.
 - **Set up for <player>** opens the same three questions with a banner naming the player.
   You can choose a sheet in this world, including a placeholder you own. Linking their existing
   ScryRPG character keeps it theirs. Creating one from a Foundry sheet first makes it yours,
-  then sends them an offer. The row waits for their acceptance; it does not transfer it silently.
+  then sends them an offer. The entry waits for their acceptance; it does not transfer it silently.
 - **Copy invite link** appears when ScryRPG supplies a party join link.
-- A problem expands in its player's row. **Keep this one** keeps the selected linked sheet;
+- A problem expands in its player's entry. **Keep this one** keeps the selected linked sheet;
   the other keeps its contents and permissions in Foundry and stops syncing. If the selected
-  copy needs a new link, the same action connects it. An interrupted repair stays on the row
+  copy needs a new link, the same action connects it. An interrupted repair stays on the entry
   for you to retry; opening the panel alone never restarts it.
 
-World problems appear above the rows. If another browser is saving a character, close that
+World problems appear above the entries. If another browser is saving a character, close that
 browser's character session, then reload here. There is no takeover button.
 
 Pending character offers appear on the recipient's **Your character** card. Choose **Accept**
@@ -110,7 +110,7 @@ or **Decline**. After acceptance, the normal sync grants access to the new owner
 Foundry user. A stale offer explains why it disappeared; a character limit shows the counts.
 
 Use **Play a character yourself** for your own character. **Advanced** opens character switching, ownership, earlier versions, sync details and table
-options. Problems appear inside the affected row, with one decision and one action.
+options. Problems appear inside the affected entry, with one decision and one action.
 
 ### Your character
 
@@ -181,7 +181,7 @@ On a shared computer, sign out from the Account menu when you finish.
    - A container’s **…** menu switches between list and cards view, or opens container editing
      on ScryRPG. Narrow panels always use lists.
    - Rows show weight for one item and value for the whole stack; hover the value for its unit
-     value. Click a row for details, including the existing split, equipment and commerce actions.
+     value. Click an entry for details, including the existing split, equipment and commerce actions.
    - Each item's **…** menu offers **Edit Details**, **Split Stack** for multiple items, and
      **Remove Item**. Removing asks first and sends the item to party trash; undo it from History.
      Edit changes name, quantity, unit value and weight, with served equipment/attunement toggles
@@ -219,6 +219,42 @@ On a shared computer, sign out from the Account menu when you finish.
 9. The **Open on ScryRPG** icon, at the top right of a character, a container, a shop, a loot pile
    or the Library, opens it on the website: use it for anything the panel doesn't do. A container
    or item opens its owner's inventory there.
+
+## Unidentified and disguised items
+
+An unidentified item shows the name and description your GM chose for it. It is marked
+**Unidentified**, with its true details hidden. Open its details in the panel and choose
+**Request identification** to ask your GM. You can cancel your request while it is waiting.
+A disguised item looks like an ordinary item, with the appearance your GM chose.
+
+When a disguised item's use needs your GM's decision, the use waits and your sheet is
+restored. You see **Your GM will decide what happens.** The panel says **Waiting for your
+GM.** Repeated attempts on the same waiting request do not post another message.
+An item marked Unidentified keeps its hidden use controls unavailable; ask your GM to
+identify it first.
+
+### For GMs
+
+The panel shows the true item. **Masked items** on Home lists hidden identities by
+location, with All, Unidentified and Disguised filters. Open an item to see **Players see**
+beside its true details. If the current player view is unavailable, the badge says
+**Masked** and the Players-see details are omitted.
+
+**Requests** shows who asked and what they tried to do, when available. Choose:
+
+- **Identify and apply** to reveal the item and apply the attempted use.
+- **Identify** to reveal it without applying the use.
+- **Decline** to refuse the request, with an optional reason.
+
+If ScryRPG cannot apply an approved use, the item is still revealed and the panel explains
+why the use did not happen. **Reveal** also identifies an item directly. Reveals and
+approvals ask you to confirm the appearance and true item before continuing.
+
+Use **Mask item** to choose whether players can tell the item is hidden: **Unidentified**
+or **Disguised**. Under **What players see**, choose **Custom appearance** or **Look like
+another item** and search the library. You can edit its name, description, value and
+weight before saving. **Edit what players see** changes an existing mask or picks another
+appearance. If the player view is unavailable, enter the appearance yourself.
 
 ## Re-importing from D&D Beyond
 
@@ -258,15 +294,70 @@ On a shared computer, sign out from the Account menu when you finish.
 ## Known limits in this beta
 
 1. Conditions do not sync with ScryRPG in either direction. Set them in Foundry for play.
-2. Experience points, and uses or charges spent on items and features, stay in Foundry.
-   ScryRPG doesn't keep them yet, so awarding XP in Foundry (by hand or with a module such as
-   Monk's TokenBar) is fine, and the website won't show it.
-3. Carrying capacity reads **Capacity not shown** in the panel, or **Not shown** where
-   the value is unavailable. The Take dialog omits unavailable capacity. Loot piles show no total value.
+2. Experience points stay in Foundry; spent item charges and feature, feat and spell uses
+   sync with ScryRPG. Awarding XP in Foundry (by hand or with a module such as Monk's TokenBar)
+   is fine, and the website won't show it.
+3. Foundry now sends the sheet's carrying capacity to ScryRPG in the world's weight unit,
+   and ScryRPG uses it as that character's weight limit, so the website may show a different
+   value than before. This adds no new capacity display in Foundry.
+   The panel still says **Capacity not shown**, or **Not shown**, where a value is unavailable;
+   the Take dialog omits unavailable capacity. Loot piles show no total value.
 4. Create shops and loot on the website, then use them in Foundry. For voting on loot,
    the panel says **This pile uses need/greed: vote on ScryRPG**. The hero’s **Open on ScryRPG**
    icon opens that pile for voting and management.
 5. Loot placed on the map, journals and lore, and encounters are not in this version.
+6. Masking is refused while an item is in a built-in container such as Equipped.
+   Move it to another container first.
+7. An item that is unidentified in Foundry cannot be imported, even by a GM. When you
+   connect a sheet and keep its Foundry version, such an item that ScryRPG does not hold
+   yet is left on the sheet, listed under **Not in ScryRPG**, and the sheet's other items
+   are imported as usual. To bring it in later, identify it in Foundry, add it, then use
+   **Mask item**.
+8. Disguising an item sets aside everything about it that exists only in Foundry: rules,
+   effects and source details that someone made or added there, on items made in Foundry
+   and on items ScryRPG created alike. Revealing it restores what ScryRPG knows. The GM
+   receives a private notice that names the item by its disguise.
+9. An item that was disguised before updating the module is rebuilt as its disguise the
+   first time a ScryRPG GM or manager loads the world with this version. Its Foundry-only
+   content is set aside, as for any disguise, and the GM receives a private notice.
+10. Reveal a group of masked stacks at once on the website. In Foundry, reveal each stack.
+11. A disguise takes full effect in Foundry only while a ScryRPG GM or manager is
+    connected in the world. Until then an item made in Foundry still shows as itself, any
+    item keeps Foundry-only rules that were added to it, and a revealed item made in
+    Foundry stays unidentified. A Foundry GM who is only a party member on ScryRPG cannot
+    complete any of these.
+12. Going back to an older module version is not supported. Once this version has loaded a
+    world, an older version reports errors there and stops syncing.
+13. An unidentified item keeps the rules, effects and source details that exist only in
+    Foundry, whether the item was made there or they were added to it. The game system
+    hides them from players while the item is unidentified, but they are not removed.
+14. Other modules keep their own data on items, and ScryRPG does not change it. If another
+    module stored an item's original name, for example an importer, that data still holds
+    the name while the item is unidentified or disguised.
+15. Chat messages keep the text they were posted with. A notice that named an item before
+    it was masked still names it. Foundry also delivers whispered messages to every
+    connected browser and only hides them in the chat log.
+16. A player who inspects an item's data in the browser console can tell that ScryRPG
+    rebuilt an item made in Foundry, which shows that it is or was disguised. What it
+    really is is not shown.
+17. A backup of a Foundry character that is saved to ScryRPG is a complete copy of that
+    sheet, including items that are unidentified in Foundry. It is kept so the sheet can
+    be restored and is not shown as inventory.
+18. While a character's setup is unfinished, ScryRPG changes to that sheet wait until setup
+    finishes; other characters keep syncing. A mask or a moved item for that sheet arrives
+    once setup finishes. Edits made on that sheet in Foundry are still sent.
+19. On a computer where two people use Foundry in the same browser profile, opening Foundry
+    as the second person removes the first person's ScryRPG sign-in from that browser and
+    asks ScryRPG to end that session. Changes the first person's browser had not sent yet
+    are discarded with it. The first person connects their account again when they return.
+20. While a character's setup is unfinished and you chose to keep the Foundry version, the
+    Foundry sheet wins. A value changed on the website before setup finishes is replaced by
+    the sheet's value when setup continues. Finish or stop setup before editing that
+    character on the website.
+21. Signing out asks you first. If you confirm, changes this browser has not sent are
+    discarded and do not return when you sign in again (unless the browser could not save
+    its own settings, for example because its storage is full). Changes already sent may
+    still complete on ScryRPG. Signing out leaves your Foundry sheets in place.
 
 ## If something goes wrong
 
